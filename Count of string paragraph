@@ -1,0 +1,16 @@
+#assignment-1:Given a paragraph program to count number of digits ,alphabets,uppercase,lowercase.
+str=input()
+upper=lower=number=special = 0
+for i in range(len(str)):
+    if str[i].isupper():
+        upper += 1
+    elif str[i].islower():
+        lower += 1
+    elif str[i].isdigit():
+        number += 1
+    else:
+        special += 1
+print('Upper case letters:', upper)
+print('Lower case letters:', lower)
+print('Numbers:', number)
+print('Special characters:', special)
